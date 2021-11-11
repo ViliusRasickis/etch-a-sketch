@@ -1,10 +1,9 @@
 html {
-  background-image: url(../images/etchasketchboard.png);
+  background-image: url("../images/etchasketchboard.png");
   height: 800px;
-  width: 1024px;
+  width: 970px;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 5px solid red;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -12,23 +11,45 @@ html {
 }
 
 #flexContainer {
+  max-height: 500px;
+  max-width: 680px;
+  min-height: 500px;
+  min-width: 680px;
   display: flex;
   flex-direction: column;
-  border: 5px solid green;
+  margin-right: 15px;
 }
 
 #frameContainer {
+  max-height: 500px;
+  max-width: 700px;
+  min-height: 500px;
+  min-width: 700px;
   background-color: #c2c2c2;
   display: flex;
   height: 69vh;
-  width: 98vh;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
   flex-wrap: wrap;
+  margin-top: -15px;
+  margin-bottom: 50px;
 }
 
-#thickness {
+#thicknessContainer {
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#thicknessRange {
+  background: #c2c2c2;
+  border-radius: 8px;
+  height: 7px;
+  width: 350px;
+  -moz-appearance: none;
+}
+
+p {
+  color: white;
 }
